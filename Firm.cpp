@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "Firm.h"
+#include "Aylar.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"

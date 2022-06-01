@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "Person.h"
+#include "Aylar.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"

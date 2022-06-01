@@ -1,7 +1,7 @@
 object Chapter_F: TChapter_F
   Left = 0
   Top = 0
-  Caption = 'Chapter_F'
+  Caption = #1056#1072#1079#1076#1077#1083#1099
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
@@ -10,6 +10,7 @@ object Chapter_F: TChapter_F
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 15
   object Splitter1: TSplitter
@@ -36,6 +37,7 @@ object Chapter_F: TChapter_F
     Width = 624
     Height = 313
     Align = alTop
+    DataSource = ChapterDS
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -48,11 +50,9 @@ object Chapter_F: TChapter_F
     Top = 318
     Width = 624
     Height = 41
+    DataSource = ChapterDS
     Align = alTop
     TabOrder = 1
-    ExplicitLeft = 208
-    ExplicitTop = 184
-    ExplicitWidth = 200
   end
   object Panel1: TPanel
     Left = 0
@@ -61,10 +61,6 @@ object Chapter_F: TChapter_F
     Height = 77
     Align = alClient
     TabOrder = 2
-    ExplicitLeft = 176
-    ExplicitTop = 256
-    ExplicitWidth = 105
-    ExplicitHeight = 41
     object Bevel1: TBevel
       Left = 16
       Top = 0
@@ -74,12 +70,23 @@ object Chapter_F: TChapter_F
     end
     object CloseB: TButton
       Left = 224
-      Top = 6
-      Width = 153
-      Height = 57
-      Caption = 'CloseB'
+      Top = 14
+      Width = 150
+      Height = 50
+      Cursor = crHandPoint
+      Caption = #1047#1072#1082#1088#1099#1090#1100
       TabOrder = 0
       OnClick = CloseBClick
     end
+  end
+  object ChapterDS: TDataSource
+    DataSet = ChapterQ
+    Left = 88
+    Top = 184
+  end
+  object ChapterQ: TADOQuery
+    Parameters = <>
+    Left = 184
+    Top = 128
   end
 end

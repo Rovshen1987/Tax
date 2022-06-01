@@ -45,6 +45,7 @@ object Person_F: TPerson_F
       Width = 1021
       Height = 247
       Align = alClient
+      DataSource = PersonDS
       TabOrder = 0
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
@@ -247,6 +248,7 @@ object Person_F: TPerson_F
     Top = 254
     Width = 1023
     Height = 43
+    DataSource = PersonDS
     Align = alTop
     TabOrder = 2
   end
@@ -254,5 +256,10 @@ object Person_F: TPerson_F
     Parameters = <>
     Left = 561
     Top = 335
+  end
+  object PersonDS: TDataSource
+    DataSet = PersonQ
+    Left = 632
+    Top = 390
   end
 end

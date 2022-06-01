@@ -1,7 +1,7 @@
 object Ministry_F: TMinistry_F
   Left = 0
   Top = 0
-  Caption = 'Ministry_F'
+  Caption = #1052#1080#1085#1080#1089#1090#1077#1088#1089#1090#1074#1086
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
@@ -10,6 +10,7 @@ object Ministry_F: TMinistry_F
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 15
   object Splitter1: TSplitter
@@ -36,6 +37,7 @@ object Ministry_F: TMinistry_F
     Width = 624
     Height = 297
     Align = alTop
+    DataSource = MinistryDS
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -48,11 +50,9 @@ object Ministry_F: TMinistry_F
     Top = 302
     Width = 624
     Height = 49
+    DataSource = MinistryDS
     Align = alTop
     TabOrder = 1
-    ExplicitLeft = 112
-    ExplicitTop = 168
-    ExplicitWidth = 210
   end
   object BottomP: TPanel
     Left = 0
@@ -61,10 +61,6 @@ object Ministry_F: TMinistry_F
     Height = 85
     Align = alClient
     TabOrder = 2
-    ExplicitLeft = 168
-    ExplicitTop = 256
-    ExplicitWidth = 137
-    ExplicitHeight = 65
     object Bevel1: TBevel
       Left = 16
       Top = 8
@@ -75,11 +71,22 @@ object Ministry_F: TMinistry_F
     object CloseB: TButton
       Left = 224
       Top = 16
-      Width = 137
-      Height = 57
+      Width = 150
+      Height = 50
+      Cursor = crHandPoint
       Caption = 'CloseB'
       TabOrder = 0
       OnClick = CloseBClick
     end
+  end
+  object MinistryDS: TDataSource
+    DataSet = MinistryQ
+    Left = 240
+    Top = 184
+  end
+  object MinistryQ: TADOQuery
+    Parameters = <>
+    Left = 112
+    Top = 80
   end
 end

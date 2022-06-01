@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "Type.h"
+#include "Aylar.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -14,3 +15,9 @@ __fastcall TType_F::TType_F(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+void __fastcall TType_F::CloseBClick(TObject *Sender)
+{
+ Close();
+}
+//---------------------------------------------------------------------------
+

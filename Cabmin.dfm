@@ -41,6 +41,7 @@ object Cabmin_F: TCabmin_F
     Width = 839
     Height = 353
     Align = alTop
+    DataSource = CabminDS
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
@@ -53,6 +54,7 @@ object Cabmin_F: TCabmin_F
     Top = 358
     Width = 839
     Height = 48
+    DataSource = CabminDS
     Align = alTop
     TabOrder = 1
   end
@@ -71,10 +73,10 @@ object Cabmin_F: TCabmin_F
       Shape = bsFrame
     end
     object CloseB: TButton
-      Left = 312
+      Left = 320
       Top = 30
-      Width = 161
-      Height = 49
+      Width = 150
+      Height = 50
       Cursor = crHandPoint
       Caption = #1047#1072#1082#1088#1099#1090#1100
       TabOrder = 0
@@ -83,13 +85,13 @@ object Cabmin_F: TCabmin_F
   end
   object CabminDS: TDataSource
     DataSet = CabminQ
-    Left = 48
-    Top = 400
+    Left = 80
+    Top = 304
   end
   object CabminQ: TADOQuery
     Connection = Aylar_F.ADOConnection
     Parameters = <>
     Left = 144
-    Top = 400
+    Top = 304
   end
 end

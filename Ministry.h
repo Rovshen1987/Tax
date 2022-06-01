@@ -12,6 +12,7 @@
 #include <Vcl.DBGrids.hpp>
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Grids.hpp>
+#include <Data.Win.ADODB.hpp>
 //---------------------------------------------------------------------------
 class TMinistry_F : public TForm
 {
@@ -23,6 +24,8 @@ __published:	// IDE-managed Components
     TPanel *BottomP;
     TButton *CloseB;
     TBevel *Bevel1;
+	TDataSource *MinistryDS;
+	TADOQuery *MinistryQ;
     void __fastcall CloseBClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations

@@ -49,6 +49,7 @@ __published:	// IDE-managed Components
     TLabel *MailL;
     TBevel *Bevel1;
     TADOQuery *PersonQ;
+	TDataSource *PersonDS;
 private:	// User declarations
 public:		// User declarations
     __fastcall TPerson_F(TComponent* Owner);

@@ -10,6 +10,7 @@
 #include <Vcl.Menus.hpp>
 #include <Data.DB.hpp>
 #include <Data.Win.ADODB.hpp>
+#include "DataBase.h"
 //---------------------------------------------------------------------------
 class TAylar_F : public TForm
 {
@@ -36,10 +37,12 @@ __published:	// IDE-managed Components
     void __fastcall NChapterClick(TObject *Sender);
     void __fastcall NTypeClick(TObject *Sender);
 private:	// User declarations
+	void initialisation();
 public:		// User declarations
     __fastcall TAylar_F(TComponent* Owner);
     AnsiString convertIntToStr(const int& value);
-    int        convertStrToInt(const AnsiString& value); 
+	int        convertStrToInt(const AnsiString& value);
+	std::shared_ptr<DataBase> Data;
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TAylar_F *Aylar_F;

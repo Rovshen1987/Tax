@@ -54,6 +54,7 @@ object Firm_F: TFirm_F
         Width = 1140
         Height = 222
         Align = alClient
+        DataSource = FirmDS
         TabOrder = 0
         TitleFont.Charset = DEFAULT_CHARSET
         TitleFont.Color = clWindowText
@@ -67,6 +68,7 @@ object Firm_F: TFirm_F
       Top = 230
       Width = 1142
       Height = 48
+      DataSource = FirmDS
       Align = alTop
       TabOrder = 1
     end
@@ -698,7 +700,12 @@ object Firm_F: TFirm_F
   end
   object FirmQ: TADOQuery
     Parameters = <>
-    Left = 280
-    Top = 272
+    Left = 288
+    Top = 160
+  end
+  object FirmDS: TDataSource
+    DataSet = FirmQ
+    Left = 209
+    Top = 129
   end
 end

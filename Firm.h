@@ -107,6 +107,7 @@ __published:	// IDE-managed Components
     TDBEdit *GeneralDirectorHomeNumberDBE;
     TDBEdit *GeneralDirectorMailDBE;
     TADOQuery *FirmQ;
+	TDataSource *FirmDS;
     void __fastcall FormResize(TObject *Sender);
     void __fastcall LeadersLPClick(TObject *Sender);
 private:	// User declarations

@@ -10,6 +10,7 @@
 #include "Ministry.h"
 #include "Chapter.h"
 #include "Type.h"
+
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -79,3 +80,8 @@ void __fastcall TAylar_F::NTypeClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void TAylar_F::initialisation()
+{
+   this->Data = std::make_shared<DataBase>(this->ADOConnection, Cabmin_F->CabminQ, Chapter_F->ChapterQ,
+                                          Firm_F->FirmQ, Ministry_F->MinistryQ, Type_F->TypeQ);
+};

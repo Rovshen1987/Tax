@@ -12,6 +12,7 @@ object Aylar_F: TAylar_F
   Font.Style = []
   Menu = MainMenu1
   Position = poDesktopCenter
+  WindowState = wsMaximized
   PixelsPerInch = 96
   TextHeight = 19
   object MainMenu1: TMainMenu

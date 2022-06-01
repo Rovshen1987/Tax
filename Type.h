@@ -12,6 +12,7 @@
 #include <Vcl.DBGrids.hpp>
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Grids.hpp>
+#include <Data.Win.ADODB.hpp>
 //---------------------------------------------------------------------------
 class TType_F : public TForm
 {
@@ -23,6 +24,9 @@ __published:	// IDE-managed Components
     TPanel *Panel1;
     TButton *CloseB;
     TBevel *Bevel1;
+	TDataSource *TypeDS;
+	TADOQuery *TypeQ;
+	void __fastcall CloseBClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
     __fastcall TType_F(TComponent* Owner);
